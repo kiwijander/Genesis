@@ -1,0 +1,48 @@
+// Header
+
+.site-header {
+  padding: $space-4 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include mobile {
+    padding: $space-3 0;
+  }
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+
+.main-nav {
+  display: flex;
+  gap: $space-3;
+
+  a {
+    font-family: $font-mulish;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.35px;
+    color: $color-text;
+
+    &:hover {
+      color: $color-accent;
+    }
+    
+    &.is-active {
+      color: $color-accent;
+    }
+  }
+}

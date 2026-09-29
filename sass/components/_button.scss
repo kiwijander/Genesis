@@ -1,0 +1,20 @@
+// Contact button
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.btn--primary {
+  background: $color-accent;
+  color: #fff;
+}

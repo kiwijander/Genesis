@@ -1,0 +1,28 @@
+// We love work
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  gap: $space-5;
+  padding: $space-5 0;
+  border-top: 1px solid $color-border;
+
+  @include mobile {
+    flex-direction: column;
+    gap: $space-3;
+  }
+}
+
+.services__text {
+  max-width: 320px;
+  font-size: 14px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $space-1 $space-4;
+  font-size: 13px;
+  color: $color-text-light;
+  align-content: start;
+}

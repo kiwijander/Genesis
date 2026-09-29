@@ -1,0 +1,52 @@
+// Image grid
+
+.image-grid {
+  display: flex;
+  gap: 20px; 
+  margin: $space-6 0;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.image-grid__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-grid__item {
+  border-radius: 4px;
+  overflow: hidden;
+  background: $color-border; 
+
+  
+  &--h351 {
+    aspect-ratio: 357 / 351;
+  }
+
+  &--h413 {
+    aspect-ratio: 357 / 413;
+  }
+
+  &--h475 {
+    aspect-ratio: 357 / 475;
+  }
+
+  &--h537 {
+    aspect-ratio: 357 / 537;
+  }
+
+  &--h599 {
+    aspect-ratio: 357 / 599;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; 
+  }
+}

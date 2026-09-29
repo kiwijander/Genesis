@@ -1,0 +1,43 @@
+// Home hero
+.home-hero {
+  padding: $space-4 0 $space-5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-4;
+
+  @include mobile {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-3;
+  }
+
+  h1 {
+    font-family: $font-mulish;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    max-width: 75%;
+  }
+}
+
+.home-hero__caption {
+  flex-shrink: 0;
+  text-align: center;
+
+  &-line {
+    display: block;
+    width: 24px;
+    height: 1px;
+    margin: 0 auto $space-1;
+    background: $color-text-muted;
+  }
+
+  p {
+    font-family: $font-mulish;
+    font-style: italic;
+    font-size: 18px;
+    color: $color-text;
+    opacity: 0.6;
+  }
+}

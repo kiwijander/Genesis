@@ -1,0 +1,25 @@
+// Projects meta table
+
+.meta-table {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+}
+
+.meta-table__row {
+  display: flex;
+  justify-content: space-between;
+  gap: $space-3;
+  padding-bottom: $space-2;
+  border-bottom: 1px solid $color-border;
+  font-size: 13px;
+
+  dt {
+    color: $color-text-muted;
+  }
+
+  dd {
+    font-weight: 600;
+    text-align: right;
+  }
+}

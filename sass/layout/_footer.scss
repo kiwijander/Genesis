@@ -1,0 +1,57 @@
+// Footer 
+
+.site-footer {
+  padding: $space-5 0 $space-4;
+  margin-top: $space-6;
+  border-top: 1px solid $color-border;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include mobile {
+    .container {
+      flex-direction: column;
+      gap: $space-2;
+      text-align: center;
+    }
+  }
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: $space-3;
+
+  a {
+    font-size: 14px;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: $space-2;
+  margin-left: $space-3;
+
+  a {
+    display: flex;
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-accent;
+      opacity: 0.7;
+    }
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}

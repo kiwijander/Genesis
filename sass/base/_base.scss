@@ -1,0 +1,29 @@
+// Main
+body {
+  font-family: $font-base;
+  color: $color-text;
+  background: $color-bg;
+  font-size: 15px;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $gutter;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: $color-text-light;
+}
+
+.link-accent {
+  color: $color-accent;
+}
