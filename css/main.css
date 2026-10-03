@@ -129,7 +129,7 @@ main {
   color: #4A4FF2;
 }
 
-.main-nav {
+.main-nav ul {
   display: flex;
   gap: 24px;
 }
@@ -166,6 +166,11 @@ main {
 }
 
 .footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer-nav > ul {
   display: flex;
   align-items: center;
   gap: 24px;
